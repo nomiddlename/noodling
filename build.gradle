@@ -1,0 +1,19 @@
+/*
+ * This file copied from https://c64lib.github.io/#_installation
+ */
+plugins {
+    id "com.github.c64lib.retro-assembler" version "1.6.0"
+}
+
+retroProject {
+    dialect = "KickAssembler"
+    dialectVersion = "5.25"
+    libDirs = [".ra/deps/c64lib"]
+
+    libFromGitHub "c64lib/common", "0.4.0"
+    libFromGitHub "c64lib/chipset", "0.4.0"
+    libFromGitHub "c64lib/text", "0.4.0"
+    libFromGitHub "c64lib/copper64", "0.4.0"
+    libFromGitHub "c64lib/64spec", "0.7.0pr"
+
+}
